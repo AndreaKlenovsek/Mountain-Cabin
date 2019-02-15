@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Dancing+Script:400,700|EB+Garamond:400,500,700");
+body {
+  background: #002E0C;
+}
+@media (min-width: 60px) {
+  body {
+    background: red;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+@function brown($shade) {
+$value: map-get($clr-brown,$shade);
+@return $value;
+}
+
+@function green($shade) {
+$value: map-get($clr-green,$shade);
+@return $value;
+    }
+
