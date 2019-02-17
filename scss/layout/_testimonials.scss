@@ -1,0 +1,37 @@
+.testimonials {
+margin-top: $spacer;
+@include mq(small) {
+@include container($width: 520px);
+}
+
+@include mq(large) {
+@include grid($col: 3);
+@include container($width: 80%);
+}
+}
+
+.testimonials__content {
+box-shadow: $box-shadow;
+margin-top: $spacer;
+}
+
+
+
+.testimonials__text {
+padding: 2em 3em;
+text-align: left;
+}
+
+.testimonials__credit {
+background: brown(light);
+padding: 1em 0;
+}
+
+.testimonials__name {
+font-weight: bold;
+@include line($bg: brown(medium), $margin: .7em);
+}
+
+.testimonials__position {
+color: brown(medium);
+}

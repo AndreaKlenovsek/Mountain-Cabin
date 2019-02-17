@@ -1,0 +1,38 @@
+.section-about {
+background: rgba(brown(light), 0.8);
+
+}
+
+
+.wrapper {
+@include mq(large) {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap: $spacer;
+text-align: left;
+@include container($width: 70%);
+
+& .section__title, & .section__subtitle, & h3, & p {
+grid-column: 2 / 3; 
+}
+
+& .section__subtitle {
+&::after {
+display: none;
+}
+}
+ 
+}
+}
+ 
+.bonfire {
+box-shadow: $box-shadow;
+@include mq(large) {
+grid-column: 1 / 2; 
+grid-row: 1 / 8; 
+      
+}
+}
+
+
+

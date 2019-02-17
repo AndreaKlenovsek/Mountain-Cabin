@@ -1,0 +1,65 @@
+// Media query 
+
+$breakepoints: (
+small: 600px,
+medium: 860px,
+large: 1349px,
+);
+
+@mixin mq($size) {
+@if map-has-key($breakepoints, $size) {
+$breakepoint: map-get($breakepoints, $size);
+@media (min-width: $breakepoint) {
+@content;
+}
+}
+@else if type-of($size) == number and not unitless($size) {
+@media (min-width: $size) {
+@content;
+}
+}
+@else {
+@error "this map doesnt have #{$size} map key or is unitless"
+}
+}
+
+
+// Spacers
+
+$spacer: 2em;
+
+// Pseudo
+
+@mixin line($bg: currentColor, $width: 30%, $margin: $spacer) {
+&::after {
+content: '';
+display: block;
+width: $width;
+height: 1px;
+background: $bg;
+margin: $margin auto;
+}
+}
+
+
+// Shadow
+
+$box-shadow: 0 0 .5em rgba($clr-gray, .65);
+
+
+// Container
+
+@mixin container($width: 50%) {
+max-width: $width;
+margin: 0 auto;
+}
+
+// Grid
+
+@mixin grid($col: 4) {
+display: grid;
+grid-column-gap: $spacer;
+grid: auto-flow / repeat($col, 1fr);
+}
+
+

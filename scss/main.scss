@@ -4,10 +4,21 @@
 @import "abstracts/functions";
 @import "abstracts/mixins";
 
+// Base
+@import "base/typography";
 
-body {
-background: green(dark);
-@include mq(60px) {
-background: red;
-}
-}
+
+// Layout
+@import "layout/general";
+@import "layout/navigation";
+@import "layout/home";
+@import "layout/about";
+@import "layout/activities";
+@import "layout/offer";
+@import "layout/footer";
+@import "layout/testimonials";
+
+
+
+
+

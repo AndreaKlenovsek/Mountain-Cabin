@@ -1,0 +1,92 @@
+.section-offer {
+background-image: url(../img/offerbg11.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.packages {
+@include mq(large) {
+@include grid($col: 3);
+@include container($width: 80%);
+}
+}
+.package  { 
+position: relative;
+margin-bottom: $spacer;
+overflow: hidden;
+@include mq(small) {
+@include container($width: 520px);
+margin-bottom: $spacer;
+}
+
+
+
+&__img {
+display: block;
+}
+
+&__content {
+position: absolute;
+background: rgba(brown(light), .65);
+left: 0;
+right: 0;
+bottom: 0;
+top: 100%;
+padding: $spacer;
+transition: top ease-in-out 300ms;
+
+&::after {
+content: '';
+width: 100%;
+height: 90%;
+border-top: 1px solid brown(dark);
+border-bottom: 1px solid brown(dark);
+display: block;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto 0;
+}
+
+&::before {
+content: '';
+width: 90%;
+height: 100%;
+border-left: 1px solid brown(dark);
+border-right: 1px solid brown(dark);
+display: block;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: 0 auto;
+    }
+
+}
+
+&__title {
+margin-top: 0;
+padding: .3em 0;
+}
+}
+
+.package:hover .package__content,
+.package:focus .package__content {
+top: 40%;
+
+@include mq(large) {
+top: 50%; 
+}
+}
+
+
+
+
+
+
+
+

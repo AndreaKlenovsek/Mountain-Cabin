@@ -1,0 +1,177 @@
+nav {
+position: absolute;
+right: 0;
+top: 0;
+left: 100%;
+height: 100vh;
+overflow: hidden;  
+transition: all ease-in-out 300ms;
+@include mq(small) {
+height: auto;
+left: 0;
+padding: .7em 0;
+z-index: 100;
+
+background: rgba(brown(dark), .2);
+
+
+
+
+}
+
+
+& ul {
+display: flex;
+flex-direction: column;
+background: green(medium);
+height: 100vh;
+margin: 0;
+padding: 0;
+list-style: none;
+font-family: $ff-cinzel;
+@include mq(small) {
+flex-direction: row;
+height: auto;
+background: transparent;
+max-width: 90%;
+margin: 0 auto;
+}
+
+        
+}
+& li {
+flex: 1 1 auto;
+display: flex;
+border-bottom: 1px solid rgba(brown(light), .2);
+@include mq(small) {
+border: none;
+
+
+
+
+}
+}
+        
+a {
+flex-basis: 100%;
+display: flex;
+justify-content: center;
+place-items: center;
+font-size: 1.2rem;
+color: brown(dark);
+transition: background 300ms, transform 300ms;
+color:rgba($clr-white, .8);
+text-decoration: none;
+@include mq(small) {
+display: flex;
+font-size: 1.2rem;
+
+
+
+}
+@include mq(medium) {
+font-size: 1.2rem;   
+
+}
+@include mq(large) {
+  
+}
+
+        
+&:hover {
+background: darken(#2C4232, 5);
+@include mq(small) {
+background: transparent;
+transform: scale(1.1);
+}
+
+}
+}
+}
+
+
+
+
+.main-logo {
+display: none;
+position: absolute;
+margin: 0 auto;
+@include mq(small) {
+display: inline-block;
+
+position: relative;
+
+width: 10%;
+}
+@include mq(medium) {
+width: 8%;
+    }
+    @include mq(large) {
+        width: 6%;
+            }
+
+
+}
+
+.hamburger-menu {
+
+position: absolute;
+left: .2em;
+top: .2em;
+padding: 1.2em 1.2em;
+cursor: pointer;
+
+@include mq(small) {
+ display: none;
+}
+    
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+content: '';
+background: rgba(green(medium), 0.8);
+display: block;
+width: 2em;
+height: 3px;
+position: relative;
+transition: all ease-in-out 300ms;
+}
+
+.hamburger::before {
+transform: translateY(-6px);
+}
+
+.hamburger::after {
+transform: translateY(3px);
+}
+
+.nav-is-open {
+height: 100vh;
+overflow-y: hidden;
+@include mq(small) {
+
+
+    
+    }
+    
+
+nav {
+left: 20%;
+}
+
+.hamburger {
+transform: rotate(45deg);
+}
+
+.hamburger::before {
+opacity: 0;
+}
+    
+.hamburger::after {
+transform: rotate(-90deg)
+translateX(2px);
+
+}
+}
+
+

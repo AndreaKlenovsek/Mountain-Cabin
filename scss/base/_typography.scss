@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Dancing+Script:400,700|EB+Garamond:400,500,700');
+
+body {
+font-family: $ff-garamond;
+font-size: 1rem;
+line-height: 1.6;
+text-align: center;
+color: $clr-gray;
+}
+
+
+h1, h2, h3, h4, h5, p, figure, figcaption {
+margin: 0;
+padding: 0;
+}
+
+
+h1 {
+font-family: $ff-dancing; 
+}
+
+h2 {
+font-family: $ff-cinzel;
+color: brown(dark); 
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+h3 {
+color: green(light);
+line-height: 1.2;
+font-size: 1.3rem;
+margin-top: 3em;
+margin-bottom: .5em;
+}
+
+.home__title {
+// color: $clr-white;
+font-size: 4rem;
+}
+
+.section {
+&__subtitle {
+color: brown(medium);
+text-transform: uppercase;
+line-height: 1.1;
+margin-top: .5em;
+display: inline-block;
+
+@include line;
+}
+}
+.dark {
+color: brown(dark);
+}
+    
+.sub-dark {
+color: green(dark);
+}

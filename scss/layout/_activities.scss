@@ -1,0 +1,27 @@
+.section-activities {
+background: rgba(green(light), .2);
+position: relative;
+padding-bottom: 8em;
+
+}
+
+
+.activities__text {
+@include mq(small) {
+@include container($width: 40%);
+}
+
+@include mq(large) {
+@include grid;
+@include container($width: 80%);
+}
+
+}
+
+.green-bg {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+
+}

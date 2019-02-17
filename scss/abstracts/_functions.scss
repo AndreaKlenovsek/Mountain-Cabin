@@ -1,3 +1,5 @@
+// Color functions
+
 @function brown($shade) {
 $value: map-get($clr-brown,$shade);
 @return $value;
@@ -6,5 +8,5 @@ $value: map-get($clr-brown,$shade);
 @function green($shade) {
 $value: map-get($clr-green,$shade);
 @return $value;
-    }
+}
 

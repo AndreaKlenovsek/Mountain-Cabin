@@ -1,0 +1,15 @@
+footer {
+background: green(medium);
+padding: 4em 0;
+display: flex;
+flex-direction: column; 
+
+p {
+color: brown(light);
+}
+}
+
+.made {
+padding-top: 2em;
+color: green(dark);
+}
