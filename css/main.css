@@ -52,11 +52,23 @@ h3 {
 }
 
 .dark {
-  color: #A67C52;
+  color: #45674E;
 }
 
 .sub-dark {
   color: #002E0C;
+}
+
+.activities h3::after {
+  content: "";
+  display: block;
+  background: currentColor;
+  height: 6px;
+  width: 6px;
+  border: 1px solid currentColor;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 0.5em;
 }
 
 *, *::before, *::after {
@@ -271,6 +283,7 @@ nav a:hover {
 
 .section-about {
   background: rgba(238, 224, 203, 0.8);
+  padding-top: 6em;
 }
 
 @media (min-width: 1349px) {

@@ -51,9 +51,25 @@ display: inline-block;
 }
 }
 .dark {
-color: brown(dark);
+color: green(light);
 }
     
 .sub-dark {
 color: green(dark);
+}
+
+.activities h3 {
+
+&::after {
+content: '';
+display: block;
+background: currentColor;
+height: 6px;
+width: 6px;
+border: 1px solid currentColor;
+border-radius: 50px;
+margin: 0 auto;
+margin-top: .5em;
+
+}
 }

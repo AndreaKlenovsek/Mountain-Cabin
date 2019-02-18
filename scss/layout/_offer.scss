@@ -11,6 +11,9 @@ background-size: cover;
 @include container($width: 80%);
 }
 }
+
+
+
 .package  { 
 position: relative;
 margin-bottom: $spacer;
