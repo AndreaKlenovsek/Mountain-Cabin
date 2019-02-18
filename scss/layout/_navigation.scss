@@ -7,11 +7,11 @@ height: 100vh;
 overflow: hidden;  
 transition: all ease-in-out 300ms;
 @include mq(small) {
-height: 10vh;
+height: 11vh;
 left: 0;
 padding: .7em 0;
-z-index: 100;
 
+right: 0;
 background: rgba(brown(dark), .2);
 
 
@@ -99,23 +99,15 @@ transform: scale(1.1);
 
 .main-logo {
 display: none;
-position: absolute;
-margin: 0 auto;
 @include mq(small) {
 display: inline-block;
-
+width: 90px;
+height: 90px;
 position: relative;
 
-width: 10%;
+
+
 }
-@include mq(medium) {
-width: 8%;
-    }
-    @include mq(large) {
-        width: 6%;
-            }
-
-
 }
 
 .hamburger-menu {
@@ -153,16 +145,18 @@ transform: translateY(3px);
 .nav-is-open {
 height: 100vh;
 overflow-y: hidden;
-@include mq(small) {
 
-
-    
-    }
     
 
 nav {
 left: 20%;
+
+@include mq(small) {
+left: 0;
 }
+          
+}
+
 
 .hamburger {
 transform: rotate(45deg);

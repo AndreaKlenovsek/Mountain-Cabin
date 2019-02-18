@@ -31,35 +31,25 @@ display: none;
 @include mq(small) {
 position: absolute;
 display: block;
-bottom: 2em;
+bottom: 1em;
 left: 0;
 right: 0;
 margin: 0 auto;
-z-index: 1000;
 
-@include mq(medium) {
-bottom: 1em;
-}
+
+
     
-@include mq(large) {
-bottom: 1em;
-}
 
 }
 
 }
 
 .offer-img {
-width: 20%;
+width: 130px;
+height: 130px;
 
 
-@include mq(medium) {
-width: 11%;
-}
 
-@include mq(large) {
-width: 7%;
-}
 }
 
 

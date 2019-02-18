@@ -88,10 +88,10 @@ nav {
 }
 @media (min-width: 600px) {
   nav {
-    height: 10vh;
+    height: 11vh;
     left: 0;
     padding: 0.7em 0;
-    z-index: 100;
+    right: 0;
     background: rgba(166, 124, 82, 0.2);
   }
 }
@@ -162,24 +162,13 @@ nav a:hover {
 
 .main-logo {
   display: none;
-  position: absolute;
-  margin: 0 auto;
 }
 @media (min-width: 600px) {
   .main-logo {
     display: inline-block;
+    width: 90px;
+    height: 90px;
     position: relative;
-    width: 10%;
-  }
-}
-@media (min-width: 860px) {
-  .main-logo {
-    width: 8%;
-  }
-}
-@media (min-width: 1349px) {
-  .main-logo {
-    width: 6%;
   }
 }
 
@@ -220,6 +209,11 @@ nav a:hover {
 }
 .nav-is-open nav {
   left: 20%;
+}
+@media (min-width: 600px) {
+  .nav-is-open nav {
+    left: 0;
+  }
 }
 .nav-is-open .hamburger {
   transform: rotate(45deg);
@@ -263,36 +257,16 @@ nav a:hover {
   .offer-link {
     position: absolute;
     display: block;
-    bottom: 2em;
+    bottom: 1em;
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: 1000;
-  }
-}
-@media (min-width: 600px) and (min-width: 860px) {
-  .offer-link {
-    bottom: 1em;
-  }
-}
-@media (min-width: 600px) and (min-width: 1349px) {
-  .offer-link {
-    bottom: 1em;
   }
 }
 
 .offer-img {
-  width: 20%;
-}
-@media (min-width: 860px) {
-  .offer-img {
-    width: 11%;
-  }
-}
-@media (min-width: 1349px) {
-  .offer-img {
-    width: 7%;
-  }
+  width: 130px;
+  height: 130px;
 }
 
 .section-about {
