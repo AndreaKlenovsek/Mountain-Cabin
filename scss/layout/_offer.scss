@@ -78,6 +78,10 @@ padding: .3em 0;
 .package:focus .package__content {
 top: 40%;
 
+@include mq(small) {
+top: 60%; 
+    }
+
 @include mq(large) {
 top: 50%; 
 }

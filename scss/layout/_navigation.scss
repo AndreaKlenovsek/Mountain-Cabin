@@ -7,7 +7,7 @@ height: 100vh;
 overflow: hidden;  
 transition: all ease-in-out 300ms;
 @include mq(small) {
-height: auto;
+height: 10vh;
 left: 0;
 padding: .7em 0;
 z-index: 100;
@@ -31,10 +31,11 @@ list-style: none;
 font-family: $ff-cinzel;
 @include mq(small) {
 flex-direction: row;
-height: auto;
+height: 20vh;
 background: transparent;
 max-width: 90%;
 margin: 0 auto;
+align-items: flex-start;
 }
 
         
@@ -45,6 +46,7 @@ display: flex;
 border-bottom: 1px solid rgba(brown(light), .2);
 @include mq(small) {
 border: none;
+
 
 
 
@@ -65,6 +67,9 @@ text-decoration: none;
 @include mq(small) {
 display: flex;
 font-size: 1.2rem;
+height: 20vh;
+align-items: flex-start;
+padding-top: 1em;
 
 
 

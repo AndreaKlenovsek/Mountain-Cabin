@@ -88,7 +88,7 @@ nav {
 }
 @media (min-width: 600px) {
   nav {
-    height: auto;
+    height: 10vh;
     left: 0;
     padding: 0.7em 0;
     z-index: 100;
@@ -108,10 +108,11 @@ nav ul {
 @media (min-width: 600px) {
   nav ul {
     flex-direction: row;
-    height: auto;
+    height: 20vh;
     background: transparent;
     max-width: 90%;
     margin: 0 auto;
+    align-items: flex-start;
   }
 }
 nav li {
@@ -139,6 +140,9 @@ nav a {
   nav a {
     display: flex;
     font-size: 1.2rem;
+    height: 20vh;
+    align-items: flex-start;
+    padding-top: 1em;
   }
 }
 @media (min-width: 860px) {
@@ -429,6 +433,12 @@ nav a:hover {
 .package:hover .package__content,
 .package:focus .package__content {
   top: 40%;
+}
+@media (min-width: 600px) {
+  .package:hover .package__content,
+.package:focus .package__content {
+    top: 60%;
+  }
 }
 @media (min-width: 1349px) {
   .package:hover .package__content,
